@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%; /* 10px */
+}
+
 .roboto-mono-titles {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
@@ -26,20 +30,24 @@ p {
 .main_content {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 350px;
-    padding-right: 350px;
-    margin-top: 100px;
+    padding-left: 35rem;
+    padding-right: 35rem;
+    margin-top: 10rem;
 }
 
 .profile {
     display: grid;
     grid-template-columns: 0.2fr 0.5fr;
     grid-template-rows: 0.2fr 0.4fr;
-    grid-column-gap: 20px;
-    row-gap: 5px;
+    grid-column-gap: 2rem;
+    row-gap: 0.2rem;
+    grid-template-areas: 
+    "main_image name"
+    "main_image about_me";
 }
 .main_image {
     grid-column: 1/2;
+    grid-area: "main_image";
     width: auto;
     height: auto;
     display: flex;
@@ -49,63 +57,66 @@ p {
 
 #name {
     grid-column: 2/3;
-    font-family: ;
-    width: 350px;
+    grid-area: "name";
+    width: 35rem;
     height: 100%;
     justify-content: left;
     align-items: left;
-    padding-top: 20px;
+    padding-top: 2rem;
+    font-size: 1.5rem;
 }
 
 #about_me {
     grid-column: 2/3;
+    grid-area: "about_me";
     grid-row: 2;
-    margin-top: -130px;
+    margin-top: -13rem;
+    font-size: 1.5rem;
 }
 
 #profile_icon {
-    height: 250px;
-    width: 250px;
+    height: 25rem;
+    width: 25rem;
     border-radius: 50%;
     border: 2px solid #130118;
 }
 
 .header {
-    border-top: 5px ;
-    border-bottom: 10px ;
+    border-top: 0.5rem ;
+    border-bottom: 1rem;
     position: relative;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 .header .header_float {
-    min-height: 60px;
+    min-height: 6rem;
 
 }
 
 .site_nav {
     float: right;
-    line-height: 60px;
+    line-height: 6rem;
 }
 
 #itens_barra {
-    font-size: 18px;
+    font-size: 1.8rem;
     padding: 0;
     list-style-type: none;
 }
 
 li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 #home {
-    line-height: 60px;
+    line-height: 6rem;
 }
 
 #home_img {
-    max-width: 70px;
-    margin-top: 10px;
+    max-width: 7rem;
+    margin-top: 1rem;
 }
 
 .hover-li:hover {
@@ -132,25 +143,25 @@ a {
 }
 
 .lista_contatos {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10rem;
+    padding-right: 10rem;
     align-items: center;
-    margin-top: -50px;
+    margin-top: -0.5rem;
 }
 
 #icon_email {
-    max-width: 20px;
-    margin-right: -18px;
+    max-width: 2rem;
+    margin-right: -1.8rem;
 }
 
 #icon_instagram {
-    max-width: 20px;
-    margin-right: -18px;
+    max-width: 2rem;
+    margin-right: -1.8rem;
 }
 
 #icon_github {
-    max-width: 20px;
-    margin-right: -18px;
+    max-width: 2rem;
+    margin-right: -1.8rem;
 }
 
 .itens_contato {
@@ -162,5 +173,9 @@ a {
 }
 
 .conf_footer {
-    height: 40px;
+    height: 4rem;
+}
+
+.contato {
+    font-size: 1.5rem;
 }

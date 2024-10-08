@@ -190,7 +190,7 @@ a:hover {
 .itens_contato {
     display: flex;
     align-items: center;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .item {
@@ -204,4 +204,11 @@ a:hover {
 
 .contato {
     font-size: 1.5rem;
+}
+
+#text_footer {
+    text-align: center;
+    color: #383838;
+    font-size: 1.4rem;
+    padding-bottom: 3rem;
 }

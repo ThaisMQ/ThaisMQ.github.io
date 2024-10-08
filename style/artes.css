@@ -161,10 +161,11 @@ a:hover {
 .container_footer {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 3rem;
 }
 
-.lista_contatos {
+#lista_contatos {
     padding-left: 10rem;
     padding-right: 10rem;
     align-items: center;

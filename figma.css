@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%; /* 10px */
+}
+
+
 .roboto-mono-titles {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;

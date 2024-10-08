@@ -22,6 +22,20 @@ html {
   font-style: normal;
 }
 
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 5px;
+    bottom: 0;
+
+    width: calc(100vw - 5px);
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
 p {
     white-space: normal; 
     word-wrap: break-word; 

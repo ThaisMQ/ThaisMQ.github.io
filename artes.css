@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%; /* 10px */
+}
+
 .roboto-mono-titles {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
@@ -18,48 +22,61 @@
   font-style: normal;
 }
 
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 5px;
+    bottom: 0;
+
+    width: calc(100vw - 5px);
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 p {
     white-space: normal; 
     word-wrap: break-word; 
 }
 
-
+/* ------------------------------- Navbar */
 .header {
-    border-top: 5px ;
-    border-bottom: 10px ;
+    border-top: 0.5rem ;
+    border-bottom: 1rem ;
     position: relative;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 .header .header_float {
-    min-height: 60px;
+    min-height: 6rem;
 
 }
 
 .site_nav {
     float: right;
-    line-height: 60px;
+    line-height: 6rem;
 }
 
 #itens_barra {
-    font-size: 18px;
+    font-size: 1.8rem;
     padding: 0;
     list-style-type: none;
 }
 
 li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 #home {
-    line-height: 60px;
+    line-height: 6rem;
 }
 
 #home_img {
-    max-width: 70px;
-    margin-top: 10px;
+    max-width: 7rem;
+    margin-top: 1rem;
 }
 
 .hover-li:hover {
@@ -83,4 +100,103 @@ a {
 
 .links .hover-li:hover a{
     transform: scale(1.2);
+}
+
+/* ------------------------------- Body */
+
+.main_content {
+    border: #713781 2px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 35rem;
+    padding-right: 35rem;
+    margin-top: 4rem;
+}
+
+.main_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 9rem;
+}
+
+.artes_title {
+    max-width: 60rem;
+}
+
+#intro {
+    max-width: 80rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: normal;
+}
+
+.container_draw {
+    margin-top: 10rem;
+    float: right;
+}
+
+.container_draw_2 {
+    margin-bottom: 10rem;
+    float: left;
+}
+
+.drawning {
+    max-width: 60rem;
+    border-radius: 5%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* ----------------------------------------------- Footer */
+
+.main_footer {
+    border-top: 1px solid #383838;
+}
+
+.container_footer {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.lista_contatos {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    align-items: center;
+    margin-top: -0.5rem;
+}
+
+#icon_email {
+    max-width: 2rem;
+    margin-right: -1.8rem;
+}
+
+#icon_instagram {
+    max-width: 2rem;
+    margin-right: -1.8rem;
+}
+
+#icon_github {
+    max-width: 2rem;
+    margin-right: -1.8rem;
+}
+
+.itens_contato {
+    display: flex;
+}
+
+.item {
+    display: flex;
+}
+
+.conf_footer {
+    height: 4rem;
+}
+
+.contato {
+    font-size: 1.5rem;
 }

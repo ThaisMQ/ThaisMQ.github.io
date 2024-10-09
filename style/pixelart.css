@@ -27,7 +27,15 @@ p {
     word-wrap: break-word; 
 }
 
+main {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-top: 4rem;
+}
 
+/* ------------------------------------- Navbar */
 .header {
     border-top: 5px ;
     border-bottom: 10px ;
@@ -94,6 +102,25 @@ a:hover {
 .links .hover-li:hover a{
     transform: scale(1.2);
 }
+
+/* --------------------------------- Maincontent */
+
+.page_title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.title_img {
+    max-width: 50rem;
+}
+
+#text_description {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
 
 /* -------------------------------- Scrollbar */
 

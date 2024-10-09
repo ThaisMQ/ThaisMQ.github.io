@@ -94,3 +94,21 @@ a:hover {
 .links .hover-li:hover a{
     transform: scale(1.2);
 }
+
+/* -------------------------------- Scrollbar */
+
+::-webkit-scrollbar {
+    width: 1.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 1.6rem;
+    background-color: #713781;
+    border-radius: 30%;
+    border: 0.2rem solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2e0a38;
+}
+/* -------------------------------------------- */

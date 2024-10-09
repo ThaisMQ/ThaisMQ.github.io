@@ -106,7 +106,6 @@ a:hover {
 /* ------------------------------- Body */
 
 .main_content {
-    border: #713781 2px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10rem;
@@ -239,3 +238,13 @@ a:hover {
     background-color: #2e0a38;
 }
 /* -------------------------------------------- */
+
+.frame_e {
+    display: none;
+}
+
+.frame_c iframe {
+    width: 60rem;
+    height: 40rem;
+    border: 1px solid #000;
+}

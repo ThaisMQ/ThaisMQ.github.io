@@ -144,6 +144,10 @@ a:hover {
     float: left;
 }
 
+.container_draw p {
+    display: none;
+}
+
 .drawning {
     max-width: 60rem;
     border-radius: 5%;
@@ -230,7 +234,7 @@ a:hover {
 ::-webkit-scrollbar-thumb {
     width: 1.6rem;
     background-color: #713781;
-    border-radius: 30%;
+    border-radius: 0.8rem;
     border: 0.2rem solid #ffffff;
 }
 

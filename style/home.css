@@ -41,24 +41,48 @@ p {
     word-wrap: break-word; 
 }
 
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main_content {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 35rem;
-    padding-right: 35rem;
     margin-top: 10rem;
 }
 
 .profile {
-    display: grid;
-    grid-template-columns: 0.2fr 0.5fr;
-    grid-template-rows: 0.2fr 0.4fr;
-    grid-column-gap: 2rem;
-    row-gap: 0.2rem;
-    grid-template-areas: 
-    "main_image name"
-    "main_image about_me";
+    display: flex;
+    align-items: center;
+    max-width: 65rem;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
 }
+
+.profile .profile-about {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2.5rem;
+}
+
+@media screen and (max-width: 812px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile .profile-about {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile .profile-about #name {
+        justify-content: center;
+        display: flex;
+    }
+}
+
 .main_image {
     grid-column: 1/2;
     grid-area: "main_image";
@@ -70,21 +94,11 @@ p {
 }
 
 #name {
-    grid-column: 2/3;
-    grid-area: "name";
-    width: 35rem;
-    height: 100%;
-    justify-content: left;
-    align-items: left;
-    padding-top: 2rem;
+    padding-right: 2rem;
     font-size: 1.5rem;
 }
 
 #about_me {
-    grid-column: 2/3;
-    grid-area: "about_me";
-    grid-row: 2;
-    margin-top: -13rem;
     font-size: 1.5rem;
 }
 
@@ -209,7 +223,7 @@ a:hover {
 ::-webkit-scrollbar-thumb {
     width: 1.6rem;
     background-color: #713781;
-    border-radius: 30%;
+    border-radius: 0.8rem;
     border: 0.2rem solid #ffffff;
 }
 

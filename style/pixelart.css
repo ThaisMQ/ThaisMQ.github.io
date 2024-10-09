@@ -104,7 +104,7 @@ a:hover {
 ::-webkit-scrollbar-thumb {
     width: 1.6rem;
     background-color: #713781;
-    border-radius: 30%;
+    border-radius: 0.8rem;
     border: 0.2rem solid #ffffff;
 }
 
@@ -112,3 +112,74 @@ a:hover {
     background-color: #2e0a38;
 }
 /* -------------------------------------------- */
+
+/* ----------------------------------------------- Footer */
+
+.main_footer {
+    margin-top: 10rem;
+    border-top: 1px solid #383838;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#lista_contatos {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    align-items: center;
+    margin-top: -0.5rem;
+}
+
+#icon_email {
+    max-width: 2rem;
+    margin-right: -1.8rem;
+}
+
+#icon_instagram {
+    max-width: 2rem;
+    margin-right: -1.8rem;
+}
+
+#icon_github {
+    max-width: 2rem;
+    margin-right: -1.8rem;
+}
+
+.itens_contato {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.conf_footer {
+    height: 4rem;
+}
+
+.contato {
+    font-size: 1.5rem;
+}
+
+#text_footer {
+    text-align: center;
+    color: #383838;
+    font-size: 1.4rem;
+    padding-bottom: 3rem;
+}
+
+.footer_icon {
+    padding-bottom: 2rem;
+}
+
+.footer_icon_img {
+    max-width: 20rem;
+}
